@@ -5,12 +5,14 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
   @products = Product.all
-    if :p==1
+    if params[:p]=="1"
       @valueX=1
-    elsif :p==2
+    elsif params[:p]=="2"
       @valueX=2
-    elsif :p==3
+    elsif params[:p]=="3"
       @valueX=3
+    else
+      @valueX=0
     end
   end
 
