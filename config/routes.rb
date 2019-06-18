@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :order_lists
+  resources :orders
   resources :addresses
   resources :users
   resources :products
