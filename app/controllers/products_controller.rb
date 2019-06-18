@@ -4,7 +4,14 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+  @products = Product.all
+    if :p==1
+      @valueX=1
+    elsif :p==2
+      @valueX=2
+    elsif :p==3
+      @valueX=3
+    end
   end
 
   # GET /products/1
